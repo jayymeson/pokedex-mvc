@@ -8,7 +8,7 @@ const __dirname = path.resolve(path.dirname(''));
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")))
-
+app.use(express.urlencoded());
 
 
 const pokedex = [
@@ -49,16 +49,16 @@ const pokedex = [
     },
 
     {
-      id: "025",
-      description: "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
-      type: "Eletric",
-      name: "Pikachu",
-      imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
-      height: "0.4m",
-      weight: "6.0kg",
-      category: "Mouse",
-      abilities: "Static"
-    },
+        id: "025",
+        description: "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
+        type: "Eletric",
+        name: "Pikachu",
+        imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
+        height: "0.4m",
+        weight: "6.0kg",
+        category: "Mouse",
+        abilities: "Static"
+      },
 
 ]
 
@@ -67,6 +67,20 @@ app.get("/", (req, res) => {
   res.render("index", {pokedex});
 });
 
+app.post("/add", (req, res) => {
+  const pokemon = req.body
+  pokemon.id = pokedex.length + 1;
+  pokedex.push(pokemon)
+  res.redirect("/")
+});
+
+// app.get("/", (req, res) => {
+//   res.render('datails.ejs');
+// });
+
+app.get("/", (req, res) => {
+  res.render('register.ejs');
+});
 
 
 app.listen(port, () =>

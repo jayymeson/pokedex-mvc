@@ -23,18 +23,44 @@
 
         <img src="<%= pokemon.imagem %>" alt="">
         <h2> <%= pokemon.name %> </h2>
-        <p>Number: <%= pokemon.id %> </p>
+        <!-- <p>Number: <%= pokemon.id %> </p> -->
         <p class="description"> <%= pokemon.description %> </p>
         <p >Type: <%= pokemon.type %> </p>
-        <p> Height: <%= pokemon.height %></p>
+        <!-- <p> Height: <%= pokemon.height %></p>
         <p> Weight: <%= pokemon.weight %></p>
         <p> Category: <%= pokemon.category %></p>
-        <p> Abilities: <%= pokemon.abilities %></p>
+        <p> Abilities: <%= pokemon.abilities %></p> -->
             
         </div>  
 
         <% }) %>
     </section>
+
+    <section id="register">
+        <h2>Register your favorite Pokemon! </h2>
+
+        <form action="/add" method="post">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description">
+
+            <label for="type">Type:</label>
+            <input type="text" id="type" name="type">
+
+            <label for="imagem">Image Link:</label>
+            <input type="text" id="imagem" name="imagem">
+
+            <button id="button" type="submit">Register now! </button>
+
+
+
+        </form>
+
+    </section>
+
     </main>
 
 </body>
