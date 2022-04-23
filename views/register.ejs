@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Logo-Pokebola-Pok%C3%A9mon-PNG.png">
+    
+    <title>Pokedex</title>
+
+</head>
+<body>
+
+    <%- include('./partials/header') %>
+
+    <main>
+
+        <section id="register">
+            
+            <h2>Register your favorite Pokemon! </h2>
+    
+            <form action="/add" method="post">
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+    
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description">
+    
+                <label for="type">Type:</label>
+                <input type="text" id="type" name="type">
+    
+                <label for="imagem">Image Link:</label>
+                <input type="text" id="imagem" name="imagem">
+
+                <label for="height">Height:</label>
+                <input type="text" id="height" name="height">
+
+                <label for="weight">Weight:</label>
+                <input type="text" id="weight" name="weight">
+
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category">
+
+                <label for="abilities">Abilities:</label>
+                <input type="text" id="abilities" name="abilities">
+    
+                <button id="button" type="submit">Register now! </button>
+    
+                
+            </form>
+    
+        </section>
+
+
+    </main>
+</body>
+    <%- include('./partials/footer.ejs') %>
+</html>

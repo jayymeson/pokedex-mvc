@@ -5,63 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Logo-Pokebola-Pok%C3%A9mon-PNG.png">
     
-    <title>Document</title>
+    <title>Pokedex</title>
 </head>
 <body>
-
-    <header>
-        <h1>Pokedex</h1>
-    </header>
+    <%- include('./partials/header') %>
     
     <main>
+
     <section id="cards">
 
         <% pokedex.forEach((pokemon) => { %>
 
-        <div class="cards">
+        
+       
+            <a href="/details/<%= pokemon.id %>">
 
-        <img src="<%= pokemon.imagem %>" alt="">
-        <h2> <%= pokemon.name %> </h2>
-        <!-- <p>Number: <%= pokemon.id %> </p> -->
-        <p class="description"> <%= pokemon.description %> </p>
-        <p >Type: <%= pokemon.type %> </p>
-        <!-- <p> Height: <%= pokemon.height %></p>
-        <p> Weight: <%= pokemon.weight %></p>
-        <p> Category: <%= pokemon.category %></p>
-        <p> Abilities: <%= pokemon.abilities %></p> -->
-            
-        </div>  
+                <article class="cards">
+
+                    <img src="<%= pokemon.imagem %>" alt="">
+                    <h2> <%= pokemon.name %> </h2>
+                    <p class="description"> <%= pokemon.description %> </p>
+                    <p >Type: <%= pokemon.type %> </p>
+                                     
+                    
+                    
+                        
+                    </article>  
+
+            </a>
+
+        
+
+    
 
         <% }) %>
     </section>
 
-    <section id="register">
-        <h2>Register your favorite Pokemon! </h2>
-
-        <form action="/add" method="post">
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-
-            <label for="description">Description:</label>
-            <input type="text" id="description" name="description">
-
-            <label for="type">Type:</label>
-            <input type="text" id="type" name="type">
-
-            <label for="imagem">Image Link:</label>
-            <input type="text" id="imagem" name="imagem">
-
-            <button id="button" type="submit">Register now! </button>
-
-
-
-        </form>
-
-    </section>
-
     </main>
-
+    <%- include('./partials/footer.ejs') %>
 </body>
 </html>

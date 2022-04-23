@@ -14,10 +14,54 @@ body {
                                                 
 }
 
-header h1 {
-    color: rgb(1, 1, 1);
-    font-size: 54px;
+header {
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header ul{
+    list-style: none;
+}
+
+header button#home {
+    color: #000000;
+    background-color: #ec162c;
+    height: 40px;
+    width: 100px;
+    line-height: 0;
+    padding: 0 20px;
+    border-radius: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+header button#register {
+    color: #000000;
+    background-color: #ec162c;
+    height: 40px;
+    width: 100px;
+    line-height: 0;
+    padding: 0 20px;
+    border-radius: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+header img#logo {
+    height: 100%;
 }
 
 main {
@@ -31,22 +75,22 @@ section#cards{
     margin-top: 5rem;
 }
 
-section#cards div.cards {
+section#cards article.cards {
     width: 20rem;
     box-shadow: 5px 5px 5px 5px #00000015;
     padding: 1rem;
     margin-top: 3rem;
 }
 
-section#cards div.cards img {
+section#cards article.cards img {
     width: 100%;
 }
 
-section#cards div.cards h2 {
+section#cards article.cards h2 {
     margin-bottom: 1rem;
 }
 
-section#cards div.cards p.description {
+section#cards article.cards p.description {
     margin-bottom: 1rem;
 }
 
@@ -100,4 +144,14 @@ section#register form button {
     justify-content: center;
     margin: auto;
     
+}
+
+footer {
+    font-size: 20px;
+    margin: 10px;
+}
+
+ a {
+    text-decoration: none;
+    color: black;
 }
