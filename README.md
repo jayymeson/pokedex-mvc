@@ -9,7 +9,7 @@ As ferramentas usadas nesse projeto são:
 <img src="https://img.icons8.com/ios-filled/100/000000/javascript-logo.png"/>
 <img src="https://img.icons8.com/ios-filled/100/000000/html-5--v1.png"/>
 <img src="https://img.icons8.com/ios-filled/100/000000/css3.png"/>
-<img src="https://img.icons8.com/windows/32/000000/nodejs.png"/>
+<img src="https://img.icons8.com/windows/96/000000/nodejs.png"/>
 
 #### Contato
 Os meus contatos são: 
