@@ -5,6 +5,8 @@ body {
 	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
 	color: rgb(0, 0, 0);
 	margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 * {
@@ -20,6 +22,7 @@ header {
     text-align: center;
     align-items: center;
     background-repeat: no-repeat;
+    flex-direction: column;
 }
 
 header a {
@@ -57,7 +60,6 @@ header button#register {
     cursor: pointer;
     display: block;
     justify-content: center;
-    margin: auto;
 }
 
 header img#logo {
@@ -65,7 +67,13 @@ header img#logo {
 }
 
 main {
-    margin: 0 10rem 0 10rem;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    align-content: center;
 }
 
 section#cards{
@@ -80,6 +88,8 @@ section#cards article.cards {
     box-shadow: 5px 5px 5px 5px #00000015;
     padding: 1rem;
     margin-top: 3rem;
+    border-radius: 20px;
+    
 }
 
 section#cards article.cards img {
@@ -92,14 +102,19 @@ section#cards article.cards h2 {
 
 section#cards article.cards p.description {
     margin-bottom: 1rem;
+    font-size: 20px;
 }
 
 section#register {
     display: flex;
+    flex-direction: column;
     padding: 3rem;
     justify-content: center;
     flex-wrap: wrap;
-
+    width: 98%;
+    align-items: center;
+    align-content: center;
+    min-width: 320px;
 }
 
 section#register h2 {
@@ -110,16 +125,21 @@ section#register h2 {
 
 section#register form {
     width: 50%;
-        
+}
+
+section#register form fieldset {
+    width: 100%;
+    padding: 0% 2%;
 }
 
 section#register form input {
-    width: 100%;
+    width: 85%;
     padding: .6rem;
     font-size: 1rem;
     outline: none;
     border: solid 1.5px ;
-    margin: 0 1rem 1rem 1rem;
+    margin: 0 1rem 1rem 0rem;
+
 }
 
 section#register form label {
@@ -132,7 +152,7 @@ section#register form label {
 
 section#register form button {
     color: #000000;
-    background-color: #80222b;
+    background-color: #ec162c;
     height: 80px;
     width: auto;
     line-height: 0;
@@ -146,6 +166,41 @@ section#register form button {
     
 }
 
+/* fieldset#fieldset {
+    width: 85%;
+} */
+
+section#details {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    flex-direction: column;
+    align-content: center;
+}
+
+section#details div.details {
+    width: 20rem;
+    box-shadow: 5px 5px 5px 5px #00000015;
+    padding: 1rem;
+    margin-top: 3rem;
+    border-radius: 20px;
+}
+
+section#details div.details img {
+    width: 100%;
+}
+
+section#details div.details h2 {
+    margin-bottom: 1rem;
+}
+
+section#details div.details p.description {
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+
 footer {
     font-size: 20px;
     margin: 10px;
@@ -155,3 +210,4 @@ footer {
     text-decoration: none;
     color: black;
 }
+

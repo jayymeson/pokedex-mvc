@@ -16,15 +16,19 @@
     <%- include('./partials/header.ejs') %>
 
     <main>
-      <section id="cards">
-        <div class="cards">
+      <section id="details">
+        <div class="details">
+          
           <img src="<%= pokemon.imagem %>" alt="" />
+          <h2> <%= pokemon.name %> </h2>
+          <p class="description"> <%= pokemon.description %> </p>
+          <p class="description">Type: <%= pokemon.type %> </p>
+          <p class="description">Number: <%= pokemon.id %></p>
+          <p class="description">Height: <%= pokemon.height %></p>
+          <p class="description">Weight: <%= pokemon.weight %></p>
+          <p class="description">Category: <%= pokemon.category %></p>
+          <p class="description">Abilities: <%= pokemon.abilities %></p>
 
-          <p>Number: <%= pokemon.id %></p>
-          <p>Height: <%= pokemon.height %></p>
-          <p>Weight: <%= pokemon.weight %></p>
-          <p>Category: <%= pokemon.category %></p>
-          <p>Abilities: <%= pokemon.abilities %></p>
         </div>
       </section>
     </main>

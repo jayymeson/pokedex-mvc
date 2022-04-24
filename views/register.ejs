@@ -18,39 +18,60 @@
 
         <section id="register">
             
+          
             <h2>Register your favorite Pokemon! </h2>
     
             <form action="/add" method="post">
                 
+               
+
+                <fieldset class="fieldset">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-    
+                <input type="text" id="name" name="name" required>
+                </fieldset>
+
+                <fieldset class="fieldset">
                 <label for="description">Description:</label>
-                <input type="text" id="description" name="description">
-    
+                <input type="text" id="description" name="description" required>
+                </fieldset>
+
+                <fieldset class="fieldset">
                 <label for="type">Type:</label>
-                <input type="text" id="type" name="type">
+                <input type="text" id="type" name="type" required>
+                </fieldset>
     
+                <fieldset class="fieldset">
                 <label for="imagem">Image Link:</label>
-                <input type="text" id="imagem" name="imagem">
+                <input type="text" id="imagem" name="imagem" required>
+                </fieldset>
 
+                <fieldset class="fieldset">
                 <label for="height">Height:</label>
-                <input type="text" id="height" name="height">
+                <input type="text" id="height" name="height" placeholder="ex.:0.6m" required>
+                </fieldset>
 
+                <fieldset class="fieldset">
                 <label for="weight">Weight:</label>
-                <input type="text" id="weight" name="weight">
+                <input type="text" id="weight" name="weight" placeholder="8.5kg"  required>
+                </fieldset>
 
+                <fieldset class="fieldset">
                 <label for="category">Category:</label>
-                <input type="text" id="category" name="category">
+                <input type="text" id="category" name="category" required>
+                </fieldset>
 
+                <fieldset class="fieldset">
                 <label for="abilities">Abilities:</label>
-                <input type="text" id="abilities" name="abilities">
+                <input type="text" id="abilities" name="abilities" required>
+                </fieldset>
     
                 <button id="button" type="submit">Register now! </button>
     
                 
+            
             </form>
     
+            
         </section>
 
 
