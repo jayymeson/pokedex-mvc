@@ -3,7 +3,7 @@ import express from "express";
 import { Server } from "http";
 import path from "path";
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const __dirname = path.resolve(path.dirname(""));
 
