@@ -66,8 +66,13 @@ const pokedex = [
   },
 ];
 
+let message;
+
 app.get("/", (req, res) => {
-  res.render("index", { pokedex });
+  setTimeout(() => {
+    message = "";
+  }, 1000);
+  res.render("index", { pokedex, message});
 });
 
 app.get("/details/:id", (req, res) => {
@@ -79,12 +84,12 @@ app.get("/details/:id", (req, res) => {
   });
   console.log(pokemon);
   res.render("details.ejs", {
-    pokemon,
+    pokemon, message,
   });
 });
 
 app.get("/register", (req, res) => {
-  res.render("register.ejs");
+  res.render("register.ejs", {message});
 });
 
 app.post("/add", (req, res) => {
@@ -110,6 +115,7 @@ app.post("/add", (req, res) => {
     category,
     abilities,
   });
+  message = `Pokémon successfully registered !`;
   res.redirect("/");
 });
 
