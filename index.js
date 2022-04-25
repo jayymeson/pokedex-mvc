@@ -115,7 +115,7 @@ app.post("/add", (req, res) => {
     category,
     abilities,
   });
-  message = `Pokémon successfully registered !`;
+  message = `Yeah! You've added a new Pokemon to your Pokedex!`;
   res.redirect("/");
 });
 
