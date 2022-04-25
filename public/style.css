@@ -1,8 +1,8 @@
 @font-face {font-family: "Pokemon Fire Red"; src: url("//db.onlinewebfonts.com/t/1c1b3fdb31c3460a94aa5f52255b0388.eot"); src: url("//db.onlinewebfonts.com/t/1c1b3fdb31c3460a94aa5f52255b0388.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1c1b3fdb31c3460a94aa5f52255b0388.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1c1b3fdb31c3460a94aa5f52255b0388.woff") format("woff"), url("//db.onlinewebfonts.com/t/1c1b3fdb31c3460a94aa5f52255b0388.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1c1b3fdb31c3460a94aa5f52255b0388.svg#Pokemon Fire Red") format("svg"); }
 
 body {
-	background: #EFEFBB;
-	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+	background: #ffffff;
+	background: linear-gradient(to right, rgb(197, 230, 236), #FAFAFA);
 	color: rgb(0, 0, 0);
 	margin: 0;
     background-size: cover;
@@ -34,8 +34,8 @@ header ul{
 }
 
 header button#home {
-    color: #000000;
-    background-color: #ec162c;
+    color: #ffffff;
+    background-color: #000000;
     height: 40px;
     width: 100px;
     line-height: 0;
@@ -49,8 +49,8 @@ header button#home {
 }
 
 header button#register {
-    color: #000000;
-    background-color: #ec162c;
+    color: #ffffff;
+    background-color: #000000;
     height: 40px;
     width: 100px;
     line-height: 0;
@@ -151,8 +151,8 @@ section#register form label {
 
 
 section#register form button {
-    color: #000000;
-    background-color: #ec162c;
+    color: #ffffff;
+    background-color: #000000;
     height: 80px;
     width: auto;
     line-height: 0;
@@ -165,10 +165,6 @@ section#register form button {
     margin: auto;
     
 }
-
-/* fieldset#fieldset {
-    width: 85%;
-} */
 
 section#details {
     display: flex;
