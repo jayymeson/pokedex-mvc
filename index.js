@@ -1,9 +1,10 @@
+require("dotenv").config();
 import exp from "constants";
 import express from "express";
 import { Server } from "http";
 import path from "path";
 const app = express();
-const port = 3000 || "https://protected-ocean-56327.herokuapp.com/";
+const port = process.env.PORT || 3000;
 
 const __dirname = path.resolve(path.dirname(""));
 
