@@ -1,9 +1,11 @@
-require("dotenv").config();
+
 import exp from "constants";
 import express from "express";
 import { Server } from "http";
 import path from "path";
+import dotenv from 'dotenv'
 const app = express();
+dotenv.config();
 const port = process.env.PORT || 3000;
 
 const __dirname = path.resolve(path.dirname(""));
