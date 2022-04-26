@@ -3,7 +3,7 @@ import express from "express";
 import { Server } from "http";
 import path from "path";
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000 || "https://protected-ocean-56327.herokuapp.com/";
 
 const __dirname = path.resolve(path.dirname(""));
 
