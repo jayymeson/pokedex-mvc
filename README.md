@@ -15,7 +15,11 @@ The tools used in this project are:
 My contacts are:
 
 <a href="https://www.linkedin.com/in/jaymesonmendes/" target="_blank"
-        ><img src="https://img.icons8.com/ios-filled/100/000000/linkedin-circled--v1.png"/></a>
+        ><img src="https://img.icons8.com/ios-filled/30/000000/linkedin-circled--v1.png"/></a>
+<a href="https://www.instagram.com/jayymeson/" target="_blank"
+        ><img src="https://img.icons8.com/plasticine/30/000000/instagram-new--v2.png"/></a>
+<a href="https://api.whatsapp.com/send?phone=5584987739980" target="_blank"
+        ><img src="https://img.icons8.com/color/30/000000/whatsapp--v1.png"/></a>
 
 ##### <img src="https://img.icons8.com/material-outlined/30/000000/link--v1.png"/> You can check out this work through the link:
 https://pokedex-mvc-jayymeson.onrender.com
